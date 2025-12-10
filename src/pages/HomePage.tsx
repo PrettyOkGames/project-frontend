@@ -1,9 +1,9 @@
 import axios from "axios";
-import { useState } from "react"
+//import { useState } from "react"
 
 function HomePage() {
 
-  const [user, setUser] = useState(null)
+  //const [user, setUser] = useState(null)
 
   function getUsers() {
     axios.get(`/api/users/100`)
