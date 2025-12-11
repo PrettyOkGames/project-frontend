@@ -23,7 +23,6 @@ function HomePage() {
         username: inputEmail,
       })
       await logIn()
-      //setUserLoggedIn(true)
     }
   }
   function updateEmail(e: React.ChangeEvent<HTMLInputElement>) {
@@ -38,7 +37,7 @@ function HomePage() {
   async function logIn() {
     if (inputEmail && inputPassword && emailInputVaild) {
       try {
-        axios.post(`http://localhost:4000/api/users/login`, {
+        axios.post(`https://project-backend-6rd3.onrender.com/api/users/login`, {
           email: inputEmail,
           password: inputPassword,
           username: inputEmail,
