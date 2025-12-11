@@ -38,7 +38,7 @@ function HomePage() {
   async function logIn() {
     if (inputEmail && inputPassword && emailInputVaild) {
       try {
-        axios.post(`http://localhost:4000/api/users/login`, {
+        axios.post(`/api/users/login`, {
           email: inputEmail,
           password: inputPassword,
           username: inputEmail,
