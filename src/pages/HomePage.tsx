@@ -8,8 +8,7 @@ function HomePage() {
   const [userLoggedIn, setUserLoggedIn] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
   const [emailInputVaild, setEmailInputVaild] = useState(false)
-  const [token, setToken] = useState('')
-  const [currentProjects, setCurrentProjects] = useState<[]>([])
+  //const [currentProjects, setCurrentProjects] = useState<[]>([])
 
   async function registerAccount() {
     if (inputEmail && inputPassword && emailInputVaild) {
@@ -53,7 +52,7 @@ function HomePage() {
               }
             })
             console.log(await projects)
-            setCurrentProjects((await projects).data)
+            //setCurrentProjects((await projects).data)
           })
       }
       catch (error: any) {
@@ -61,9 +60,9 @@ function HomePage() {
       }
     }
   }
-  async function submitProject() {
+  // async function submitProject() {
 
-  }
+  // }
 
   if (!userLoggedIn) {
     return <div>
